@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="app_name">Test Finloop</string>
+
+    <!--main-->
+    <string name="create_user">Crear usuario</string>
+    <string name="go_to_login">Login</string>
+
+    <!--login-->
+    <string name="login_title">Inicio de sesión</string>
+    <string name="btn_login">Login</string>
+
+    <!--create user-->
+    <string name="create_user_title">Registro de usuario</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_password_confirm">Confirmar Contraseña</string>
+    <string name="btn_save">Registrar</string>
+    <string name="btn_clean">Limpiar</string>
+
+    <!--user list-->
+    <string name="btn_load">Cargar Usuarios</string>
+
+    <!--user detail-->
+    <string name="title_user_detail">Detalle de usuario</string>
+
+    <!--general-->
+    <string name="back">Regresar</string>
+
+    <!--errors-->
+    <string name="error_password_match">Las contraseñas no coinciden</string>
+    <string name="error_miss_field">Todos los campos son obligatorios</string>
+    <string name="error_email">El correo no es valido</string>
+    <string name="error_service">Ocurrio un error con el servidor</string>
+
 </resources>

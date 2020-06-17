@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable name="user" type="finloop.com.test.models.User"/>
+        <variable name="handler" type="finloop.com.test.adapters.handlers.UserListHandler"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/global_padding"
+        android:background="@drawable/input_text_style"
+        android:onClick="@{(v) -> handler.onSelectUser(user)}">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_margin="@dimen/margin_item_list"
+            android:textColor="@color/colorAccent"
+            android:text="@{`Email: ` + user.email}"
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_margin="@dimen/margin_item_list"
+            android:textColor="@color/colorAccent"
+            android:text="@{`Username: ` + user.username}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

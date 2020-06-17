@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="endpoint_createUser">http://candidates-dev.us-east-1.elasticbeanstalk.com/users</string>
+    <string name="endpoint_login">http://candidates-dev.us-east-1.elasticbeanstalk.com/login</string>
+</resources>

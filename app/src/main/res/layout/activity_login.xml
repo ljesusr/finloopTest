@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/global_padding"
+    tools:context=".activities.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        app:layout_constraintGuide_percent="0.2"
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_back"
+        android:text="@string/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        android:id="@+id/tv_title"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_field"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/global_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="@dimen/global_padding"
+            app:layout_constraintTop_toBottomOf="@+id/et_email"
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/container_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_login"
+        android:text="@string/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

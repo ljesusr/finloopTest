@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateUserActivity"
+    android:padding="@dimen/global_padding">
+
+    <androidx.constraintlayout.widget.Guideline
+        app:layout_constraintGuide_percent="0.2"
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_back"
+        android:text="@string/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/create_user_title"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        android:id="@+id/et_email"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        android:id="@+id/et_username"
+        android:hint="@string/hint_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        android:id="@+id/et_password"
+        android:inputType="textPassword"
+        android:hint="@string/hint_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:id="@+id/et_password_confirm"
+        android:inputType="textPassword"
+        android:hint="@string/hint_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_save"
+        android:text="@string/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save"
+        android:id="@+id/btn_clean"
+        android:text="@string/btn_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
