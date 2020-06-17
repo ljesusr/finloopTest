@@ -1,6 +1,6 @@
 # finloopTest
 Prueba android de finloop
-
+* El codigo fue probado con un celular Redmi Note 8 con android 9
 Se utilizo MVP
 
 * Para las los request se utlivizo volley
