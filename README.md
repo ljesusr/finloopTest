@@ -3,7 +3,7 @@ Prueba android de finloop
 * El codigo fue probado con un celular Redmi Note 8 con android 9
 Se utilizo MVP
 
-* Para las los request se utlivizo volley
+* Para las los request se utilizo volley
 
 * El parseo de json fue echo con GSON
 
